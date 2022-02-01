@@ -1,0 +1,166 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+nav.r-nav{
+    background: transparent;
+    padding: 20px 0;
+    transition: .5s all;
+}
+
+nav .navbar-brand{
+    font-size: 30px;
+    color: #fff;
+}
+
+nav .navbar-nav li a{
+    color: rgba(255, 255,255,0.8) !important;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    font-weight: 600 ;
+    font-family: sans-serif;
+}
+nav .navbar-nav li{
+    margin-left: 15px;
+}
+
+nav.r-nav.stickyadd{
+
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0 1px 8px 3px rgba(0,0,0,0.05);
+    transition: .5s all ease-in-out;
+}
+
+nav.r-nav.stickyadd .navbar-brand{
+    color: #e65f78;
+}
+nav.r-nav.stickyadd .navbar-nav a{
+    color: black !important;
+}
+
+.navbar  .hamburger{
+    color:white;
+}
+
+nav.stickyadd .hamburger{
+    color: black;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),url('https://images.unsplash.com/photo-1501959181532-7d2a3c064642?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHBvcnRmb2xpbyUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-containt{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-box{
+    max-width: 700px;
+    color: white;
+}
+
+content-box h4{
+    font-size: 30px;
+}
+.content-box h1{
+    font-size: 52px;
+}
+.content-box a{
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 5px 25px;
+}
+
+.content-box a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s all;
+}
+
+.content-box p{
+    color: #fff;
+}
+
+/* about us */
+
+.about li a{
+    color: black;
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    font-size: 20px;
+    border: 2px solid #d4d4d4;
+    border-radius: 50%;
+    line-height: 40px;
+    transition: 0.5s all ;
+    text-align: center;
+}
+
+.about li a:hover{
+    color: #ee8683;
+    border: 2px solid #ee8683;
+}
+
+.k-p{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* experience */
+.exp-class .progress{
+    height: 20px;
+    border-radius: 20px;
+    font-size: 10px;
+}
+
+.progress-bar{
+    background-color: #ee8683 !important;
+}
+
+.exp-class label{
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* services */
+
+.bg-sec{
+    background-color: #F8F9FA;
+}
+
+.card .card-header{
+    padding: 10px;
+    background: #ffffff !important;
+    
+}
+
+.card-header{
+    border: none !important;
+}
+
+.services-class .card-header i{
+    font-size: 50px;
+}
+
+.service-border{
+    height: 2px;
+    width: 40px;
+    margin: 15px auto;
+    background: #e65f78;
+}

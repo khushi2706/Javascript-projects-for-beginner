@@ -1,0 +1,124 @@
+:root {
+  --mainWhite: #f5f5f5f5;
+  --darkPurple: rgb(19, 7, 34);
+  --lightPurple: rgb(160 119 203);
+  --mainDark: #333333;
+  --mainGreen: #3d8591;
+  --mainRed: #b7377f;
+  --mainBlue: #5de2f0;
+}
+
+body {
+  background: var(--darkPurple);
+  color: var(--mainWhite);
+}
+.budget-feedback,
+.expense-feedback {
+  display: none;
+}
+
+.budget-form , .expense-form {
+  background-color: rgba(128, 128, 128, 0.185);
+  border: none;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+
+.budget-submit , .expense-submit{
+  background: transparent;
+  border: 0.1rem solid var(--lightPurple);
+  color: var(--lightPurple);
+}
+
+
+.budget-submit:hover , .expense-submit:hover {
+  background: var(--lightPurple);
+  color: var(--mainDark);
+}
+
+.budget-input,.expense-input {
+  background-color: rgb(221, 208, 252);
+  border: 0.05rem solid grey !important;
+}
+
+.expense-amount,
+.expense-title {
+  color: var(--mainWhite);
+}
+.edit-icon {
+  color: var(--mainGreen);
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none !important;
+}
+.delete-icon {
+  color: var(--mainRed);
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none !important;
+}
+.edit-icon:hover {
+  color: var(--mainBlue);
+}
+.delete-icon:hover {
+  color: var(--mainRed);
+}
+.showItem {
+  display: block;
+}
+.info-title {
+  font-size: 1.5rem;
+}
+.budget {
+  font-size: 1.6rem;
+  color: var(--mainGreen);
+}
+.expense {
+  font-size: 1.6rem;
+  color: var(--mainRed);
+}
+.balance {
+  font-size: 1.6rem;
+}
+.budget-icon,
+.expense-icon,
+.balance-icon {
+  font-size: 2.5rem;
+  color: var(--lightPurple);
+}
+.showRed {
+  color: var(--mainRed);
+}
+.showGreen {
+  color: var(--mainGreen);
+}
+.showBlack {
+  color: var(--mainDark);
+}
+@media screen and (min-width: 992px) {
+  .budget {
+    font-size: 2.6rem;
+    color: var(--mainGreen);
+  }
+  .expense {
+    font-size: 2.6rem;
+    color: var(--mainRed);
+  }
+  .balance {
+    font-size: 2.6rem;
+  }
+  .budget-icon,
+  .expense-icon,
+  .balance-icon {
+    font-size: 3.5rem;
+    color: var(--lightPurple);
+  }
+}
+.list-item {
+  flex: 0 0 33.33%;
+  text-align: center;
+}
+.expense-item {
+  height: 2rem;
+}

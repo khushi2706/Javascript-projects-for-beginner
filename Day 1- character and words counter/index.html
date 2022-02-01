@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        button{
+            margin-top: 10px;
+            padding: 15px 20px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            color: white;
+            border: 0px;
+            background-color: rgb(71, 9, 107);
+        }
+        button:hover{
+            color: rgb(71, 9, 107);
+            font-weight: 600;
+            background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+            animation:slidebg 5s linear infinite;
+        }
+        @keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+        textarea{
+            border: 2px solid rgb(71, 9, 107);
+            box-shadow: 0 0 4px 1px rgb(237, 215, 243);
+            border-radius: 10px;
+            font-size: 1rem;
+            outline: none;
+            padding: 10px;
+        }
+        p{
+            color: rgb(61, 2, 73);
+            margin: 5px;
+            font-weight: 500;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <textarea name="" id="para" cols="50" rows="10"></textarea>
+    <p id="characher"></p>
+    <button onclick="countChar()">Count char</button>
+    </div>
+</body>
+
+<script src="script.js"></script>
+</html>

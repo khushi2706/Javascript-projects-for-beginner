@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+:root{
+    --darker: rgb(3, 12, 26);
+    --dark: #121926;
+    --light: #192133;
+    --lighter: #334366;
+    --TEXT_COLOR_L0: #fff;
+    --TEXT_COLOR_L1: rgba(255, 255, 255, 0.8);
+    --TEXT_COLOR_L2: rgba(255, 255, 255, 0.6);
+}
+
+header
+{
+    background: var(--darker);
+    color: white;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    flex-direction: row;
+}
+
+h1{
+    font-size: 25px;
+    font-weight: 400;
+}
+.search{
+    background-color: transparent;
+    border: 2px solid var(--light);
+    border-radius: 50px;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.50rem 1rem;
+}
+
+main{
+    background-color: var(--dark);
+    padding: 15px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    background-color: var(--light);
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    margin: 1.5rem;
+    width: 300px;
+}
+
+.info{
+    color: var(--TEXT_COLOR_L2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.info h3 {
+    margin: 0;
+}
+
+.info span{
+    background-color: var(--lighter);
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 00.25rem 0.5rem;
+}
+.card img {
+    width: 100%;
+}
+.info span.green {
+    color: rgb(39, 189, 39);
+}
+
+.info span.orange {
+    color: orange;
+}
+
+.info span.red {
+    color: rgb(189, 42, 42);
+}
+.overview{
+    background-color: var(--lighter);
+    padding: 2rem;
+    position: absolute;
+    max-height: 100%;
+    border-radius: 5px;
+    overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #dadada;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+
+.overview h3 {
+    margin-top: 0;
+    margin-bottom: 3px;
+    font-size: 22px;
+}
+
+.card:hover .overview {
+    transform: translateY(0);
+}

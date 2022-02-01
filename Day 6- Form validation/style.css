@@ -1,0 +1,159 @@
+:root{
+    --light-purple : #6e7bf2;
+    --dark-purple: darkblue;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Snell Roundhand, cursive;
+}
+.container {
+    display: flex;
+    margin: 3% 5% 3% 5%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 55%;
+    min-height: 80vh;
+    padding: 10px 10px;
+}
+
+.image {
+    background-image: url("form.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* border: 2px solid black; */
+    height: 65%;
+}
+.text {
+    text-align: center;
+    font-weight: 700;
+    color: var(--dark-purple);
+    font-size: 28px;
+}
+  
+form {
+    width: 45%;
+    max-width: none;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.title{
+    color: var(--dark-purple);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    color: darkblue;
+    margin-bottom: 5px;
+}
+
+form div input{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #cbd3ff;
+    padding: 0 30px;
+    box-shadow: 2px 2px 4px rgba(46, 0, 133, 0.1);
+}
+
+form div {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+input:focus{
+    border: 2px solid var(--light-purple);
+}
+
+form div i{
+    
+    position: absolute;
+    padding: 10px;
+}
+
+.failure-icon, .error{
+    color: red;
+    opacity: 0;
+}
+
+.success-icon{
+    opacity: 0;
+    color: green;
+}
+
+.error{
+    font-size: 14.5px;
+    margin-top: 5px;
+}
+
+.success-icon
+.failure-icon{
+    right: 0;
+    opacity: 0;
+}
+
+button{
+    margin-top: 15px;
+    width: 100%;
+    height: 45px;
+    background-color: var(--light-purple);
+    border: 2px solid var(--light-purple);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s ease;
+}
+
+button:hover
+{
+    opacity: 0.8;
+}
+
+
+/* responsive */
+
+@media (max-width:900px) {
+    .container{
+        flex-direction: column;
+    }
+
+    form,.content{
+        width: 100%;
+    }
+
+    
+
+    .image{
+        height: 70vh;
+    }
+}
+
+@media (max-width: 425px) {
+    form {
+      padding: 20px;
+    }
+  }
